@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import { Power4 } from 'gsap'
+import Image from 'next/image'
 
 interface Techprops {
   titre:String;
@@ -59,7 +60,7 @@ function Tech({ titre, logo }:Techprops) {
       break;
 
     case "git":
-      pic = "git.svg";
+      pic = "git2.svg";
       break;
 
     default:
@@ -72,7 +73,8 @@ function Tech({ titre, logo }:Techprops) {
   })
   return (
     <div ref={tec} className={style.tech}>
-      <img ref={ima} src={pic} alt="tech" />
+      <Image ref={ima} src={pic} alt="tech" width={30} height={30} className='block md:hidden'/>
+      <Image ref={ima} src={pic} alt="tech" layout='responsive' width={75} height={75} className='hidden md:block'/>
       <p>{titre}</p>
     </div>
   )

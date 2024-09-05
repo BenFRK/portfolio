@@ -4,6 +4,7 @@ import style from "./About.module.scss";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Image from "next/image";
 
 function About() {
   const right = useRef(null);
@@ -21,7 +22,7 @@ function About() {
 
   return (
     <div id="about" className={style.about}>
-      <p>ABOUT ME</p>
+      {/* <p>ABOUT ME</p> */}
       <div className={style.body}>
         <div ref={left} className={style.left}>
           <p>
@@ -33,7 +34,7 @@ function About() {
             real-world projects.
           </p>
           <div className={style.pics}>
-            <img ref={smile} src="smile.svg" alt="" />
+            <Image ref={smile} src="smile.svg" alt="smile" width={358} height={193} layout="responsive" />
           </div>
           <h3 ref={motiv}>MOTIVATED AND ALWAYS LOOKING FOR PROGRESS</h3>
         </div>

@@ -29,8 +29,8 @@ function Skills() {
             <p>FRAMEWORKS AND LIBRAIRIES</p>
             <div className={style.row}>
             <Tech titre={"SASS"} logo={"sass"} />
-            <Tech titre={"TAILWIND"} logo={"tailwind"} />
             <Tech titre={"GSAP"} logo={"gsap"} />
+            <Tech titre={"TAILWIND"} logo={"tailwind"} />
             <Tech titre={"REACT"} logo={"react"} />
             <Tech titre={"NEXT"} logo={"next"} />
               

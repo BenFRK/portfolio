@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Power1 } from "gsap";
+import Image from "next/image";
 function Welcome() {
   gsap.registerPlugin(ScrollTrigger);
   const welcome = useRef<HTMLHRElement>(null);
@@ -76,7 +77,7 @@ function Welcome() {
           <p ref={world}>THIS IS MY WORLD</p>
           <div ref={scroll} className={style.down}>
             <p>scroll down</p>
-            <img src="mouse.svg" alt="mouse" />
+            <Image src="mouse.svg" alt="mouse" height={24} width={24} />
           </div>
         </div>
         <p ref={respo} className={style.respo}>
