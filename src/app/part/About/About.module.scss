@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    border-radius:  20px 0px;
+
+    p {
+        font-size: 40px;
+        font-weight: 600;
+        color: rgb(88, 6, 6);
+        line-height: 1;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    .body {
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-flow: column;
+        }
+    }
+}
+
+.body {
+    .left {
+        flex: 1;
+        width: auto;
+        display: flex;
+        flex-flow: column nowrap;
+
+        img {
+            margin-bottom: 125px;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            text-align: left;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            line-height: 1.5;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 40px;
+            width: auto;
+            line-height: 1;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+            @media (max-width: 768px) {
+                font-size: 30px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 30px;
+
+        .wrap {
+            display: flex;
+            flex-flow: column nowrap;
+
+            .square {
+                display: flex;
+                width: 100%;
+                justify-content: end;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .cube {
+                height: 175px;
+                flex: 1;
+                background-color: rgb(88, 6, 6);
+            }
+
+            .cubeN {
+                height: 175px;
+                flex: 1;
+                background-color: transparent;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            text-align: left;
+            width: 500px;
+            font-weight: 600;
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            line-height: 1.5;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
