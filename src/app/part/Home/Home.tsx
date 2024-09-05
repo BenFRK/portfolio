@@ -4,6 +4,7 @@ import style from './Home.module.scss'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import Image from 'next/image'
 function Home() {
  const dev = useRef(null);
  
@@ -21,9 +22,9 @@ function Home() {
       <div className={style.right}>
         <img src='right.svg' alt="" />
         <div className={style.social}>
-          <a target='_blank' className={style.link} href="https://www.facebook.com/ben.frk.3"><img src='fb.svg' alt="" /></a>
-          <a target='_blank' className={style.link} href="#"><img src="git.svg" alt="" /></a>
-          <a target='_blank' className={style.link} href="https://wa.me/341041909"><img src='whatsapp.svg' alt="" /></a>
+          <a target='_blank' className={style.link} href="https://www.facebook.com/ben.frk.3"><Image src='fb.svg' alt="facebook icon" width={100} height={100} className='hidden md:block' /><Image src='fb.svg' alt="facebook icon" width={75} height={75} className='block md:hidden' /></a>
+          <a target='_blank' className={style.link} href="#"><Image src="git.svg" alt="git" width={100} height={100} className='hidden md:block' /> <Image src="git.svg" alt="git" width={75} height={75} className='block md:hidden' /></a>
+          <a target='_blank' className={style.link} href="https://wa.me/341041909"><Image src='whatsapp.svg' alt="whatsapp.svg" height={100} width={100} className='hidden md:block' /><Image src='whatsapp.svg' alt="whatsapp.svg" height={75} width={75} className='block md:hidden' /></a>
         </div>
       </div>
     </div>

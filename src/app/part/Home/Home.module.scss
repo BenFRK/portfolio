@@ -52,11 +52,6 @@
         justify-content: start;
         align-items: center;
 
-        img {
-            @media (max-width: 768px) {
-                // Specific styles for img if needed
-            }
-        }
     }
 }
 
@@ -69,15 +64,15 @@
     gap: 20px;
 
     .link {
-        img {
-            width: 100px;
-            height: 100px;
+        // img {
+        //     width: 100px;
+        //     height: 100px;
 
-            @media (max-width: 768px) {
-                width: 75px;
-                height: 75px;
-            }
-        }
+        //     @media (max-width: 768px) {
+        //         width: 75px;
+        //         height: 75px;
+        //     }
+        // }
     }
 
     .link:hover {

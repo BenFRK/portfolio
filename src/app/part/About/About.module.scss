@@ -38,13 +38,10 @@
         width: auto;
         display: flex;
         flex-flow: column nowrap;
+        padding: 20px;
 
         img {
             margin-bottom: 125px;
-
-            @media (max-width: 768px) {
-                width: 100%;
-            }
         }
 
         p {

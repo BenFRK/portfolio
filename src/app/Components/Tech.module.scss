@@ -7,14 +7,14 @@
     align-items: center;
     gap: 10px;
 
-    img {
-        @media (max-width:768px) {
-            width: 30px;
-            height: 30px;
-        }
-        height: 75px;
-        width: 75px;
-    }
+    // img {
+    //     @media (max-width:768px) {
+    //         width: 30px;
+    //         height: 30px;
+    //     }
+    //     height: 75px;
+    //     width: 75px;
+    // }
 
     p {
         @media (max-width:768px) {
