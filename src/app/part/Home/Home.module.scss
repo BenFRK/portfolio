@@ -64,15 +64,15 @@
     gap: 20px;
 
     .link {
-        // img {
-        //     width: 100px;
-        //     height: 100px;
+        img {
+            width: 100px;
+            height: auto;
 
-        //     @media (max-width: 768px) {
-        //         width: 75px;
-        //         height: 75px;
-        //     }
-        // }
+            @media (max-width: 768px) {
+                width: 75px;
+                height: auto;
+            }
+        }
     }
 
     .link:hover {

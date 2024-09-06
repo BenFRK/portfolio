@@ -74,7 +74,7 @@ function Tech({ titre, logo }:Techprops) {
   return (
     <div ref={tec} className={style.tech}>
       <Image ref={ima} src={pic} alt="tech" width={30} height={30} className='block md:hidden'/>
-      <Image ref={ima} src={pic} alt="tech" layout='responsive' width={75} height={75} className='hidden md:block'/>
+      <Image ref={ima} src={pic} alt="tech" width={75} height={75} className='hidden md:block'/>
       <p>{titre}</p>
     </div>
   )
