@@ -20,7 +20,7 @@ function Home() {
         <p>I AM A DEV WHO WANT  TO DO BIG THING</p>
       </div>
       <div className={style.right}>
-        <img src='right.svg' alt="" />
+        {/* <img src='right.svg' alt="" /> */}
         <div className={style.social}>
           <a target='_blank' className={style.link} href="https://www.facebook.com/ben.frk.3"><Image src='fb.svg' alt="facebook icon" width={100} height={100} className='hidden md:block' /><Image src='fb.svg' alt="facebook icon" width={75} height={75} className='block md:hidden' /></a>
           <a target='_blank' className={style.link} href="#"><Image src="git.svg" alt="git" width={100} height={100} className='hidden md:block' /> <Image src="git.svg" alt="git" width={75} height={75} className='block md:hidden' /></a>

@@ -34,7 +34,7 @@ function About() {
             real-world projects.
           </p>
           <div className={style.pics}>
-            <Image ref={smile} src="smile.svg" alt="smile" width={358} height={193} layout="responsive" />
+            <Image ref={smile} src="smile.svg" alt="smile" width={358} height={193} />
           </div>
           <h3 ref={motiv}>MOTIVATED AND ALWAYS LOOKING FOR PROGRESS</h3>
         </div>

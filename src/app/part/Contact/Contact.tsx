@@ -35,10 +35,10 @@ function Contact() {
   );
   return (
     <div id="contact" ref={work} className={style.contact}>
-      <p>LET'S WORK TOGETHER</p>
+      <p>LET&apos;S WORK TOGETHER</p>
       <div className={style.body}>
         <div className={style.left}>
-          <p>LET'S BUILD SOMETHING GREAT TOGETHER</p>
+          <p>LET&apos;S BUILD SOMETHING GREAT TOGETHER</p>
           <a target="_blank" href="mailto:faaroukabdoulahbenalex@gmail.com">
             SEND A MAIL
           </a>
