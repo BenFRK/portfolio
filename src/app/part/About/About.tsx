@@ -15,9 +15,9 @@ function About() {
   useGSAP(() => {
     // .from(right.current,{xPercent:200,opacity:0,ease:"elastic.out(0.4,0.15)"});
     // .from(left.current,{duration:0.5,yPercent:500,opacity:0,ease:"ease in out"});
-    gsap.from(right.current,{xPercent:-500,opacity:0,ease:"ease in out",duration:0.5,scrollTrigger:{trigger:left.current,markers:false,start:"top 50%",toggleActions:"restart none none reverse"}});
-    gsap.to(smile.current,{scrollTrigger:{trigger:smile.current,markers:false,start:"top 20%",end:"150% top",pin:true,scrub:1}});
-    gsap.to(motiv.current,{scrollTrigger:{trigger:motiv.current,markers:false,start:"top 20%",end:"275% top",pin:true,scrub:1}});
+    gsap.from(right.current, { xPercent: -500, opacity: 0, ease: "ease in out", duration: 0.5, scrollTrigger: { trigger: left.current, markers: false, start: "top 50%", toggleActions: "restart none none reverse" } });
+    gsap.to(smile.current, {rotate:-30,scrollTrigger: { trigger: smile.current, markers: true, start: "top 20%", end: "150% top", pin: true, scrub: 1 } });
+    gsap.to(motiv.current, { scrollTrigger: { trigger: motiv.current, markers: false, start: "top 20%", end: "275% top", pin: true, scrub: 1 } });
   });
 
   return (
@@ -34,7 +34,7 @@ function About() {
             real-world projects.
           </p>
           <div className={style.pics}>
-            <Image ref={smile} src="smile.svg" alt="smile" width={358} height={193} />
+            <Image ref={smile} src="/zoky.png" alt="smile" width={358} height={193} />
           </div>
           <h3 ref={motiv}>MOTIVATED AND ALWAYS LOOKING FOR PROGRESS</h3>
         </div>
@@ -42,17 +42,17 @@ function About() {
           <div className={style.wrap}>
             <div className={style.square}>
               <div className={style.cubeN}></div>
-              <div className={style.cubeN}></div>
+              <div className={style.cubet}><Image src="/Black Hole.png" alt="smile" width={100} height={100} /></div>
               <div className={style.cube}></div>
             </div>
             <div className={style.square}>
               <div className={style.cubeN}></div>
               <div className={style.cube}></div>
-              <div className={style.cubeN}></div>
+              <div className={style.cubet}><Image src="/shape.png" alt="smile" width={100} height={100} /></div>
             </div>
             <div className={style.square}>
               <div className={style.cubeN}></div>
-              <div className={style.cubeN}></div>
+              <div className={style.cubet}><Image src="/phone.png" alt="smile" width={100} height={100} /></div>
               <div className={style.cube}></div>
             </div>
           </div>

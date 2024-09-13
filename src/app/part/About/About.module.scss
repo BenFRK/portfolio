@@ -7,7 +7,7 @@
     align-items: center;
     gap: 50px;
     padding: 50px;
-    border-radius:  20px 0px;
+    border-radius: 20px 0px;
 
     p {
         font-size: 40px;
@@ -103,6 +103,15 @@
                 height: 175px;
                 flex: 1;
                 background-color: rgb(88, 6, 6);
+            }
+
+            .cubet {
+                height: 175px;
+                flex: 1;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .cubeN {
