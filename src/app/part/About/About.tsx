@@ -48,7 +48,7 @@ function About() {
             <div className={style.square}>
               <div className={style.cubeN}></div>
               <div className={style.cube}></div>
-              <div className={style.cubet}><Image src="/shape.png" alt="smile" width={100} height={100} /></div>
+              <div className={style.cubeN}></div>
             </div>
             <div className={style.square}>
               <div className={style.cubeN}></div>

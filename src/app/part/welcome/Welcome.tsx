@@ -21,7 +21,6 @@ function Welcome() {
       .from(world.current, { duration: 0.5, opacity: 0, x: -500 })
       .from(scroll.current, { duration: 2, opacity: 0 })
       .from(respo.current, { duration: 1.2, opacity: 0 });
-    // gsap.from(scroll.current, { borderTopLeftRadius: "30%/60%", borderBottomRightRadius: "90%/32%", borderBottomLeftRadius: "67%/100%", borderTopRightRadius: "69%/3%", repeat: -1, borderColor: "white", duration: 2, yoyo: true, stagger: 0.3 });
     gsap.from(scroll.current, {
       duration: 3,
       borderRadius: () =>
@@ -43,29 +42,31 @@ function Welcome() {
       yoyo: true,
       ease: "power1.inOut",
     });
-    gsap.to(wrap.current, {
-      xPercent: -200,
-      opacity: 0,
-      duration:0.3,
+
+
+    gsap.to(scroll.current, {
+      scale: 15,
+      Color: "white",
       scrollTrigger: {
-        trigger: wrap.current,
+        trigger: scroll.current,
         markers: false,
-        toggleActions: "play pause resume reverse",
-        start: "50% 20%",
-        end: "80% top",
+        toggleActions: "play none none reverse",
+        start: "40% 60%",
+        end: "bottom 35%",
+        scrub: 1,
       },
     });
-    gsap.to(scroll.current, {
-      scale: 50,
-      backgroundColor: "white",
-      rotate: 90,
+
+
+    gsap.to(wrap.current, {
+      opacity: 0,
       scrollTrigger: {
         trigger: wrap.current,
         markers: false,
-        toggleActions: "play none resume reverse",
-        start: "30% 20%",
-        end: "50% top",
-        scrub: 1,
+        pin:true,
+        toggleActions: "play end none reverse",
+        start: "50% 46%",
+        end: "80% top",
       },
     });
   });

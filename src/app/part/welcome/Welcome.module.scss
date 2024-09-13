@@ -5,11 +5,13 @@
     background-color: black;
     padding: 50px 20px;
     flex-flow: column;
-    height: 100vh;
+    height: 120vh;
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100;
+    // overflow-y: hidden;
+    border: 5px sold red;
 
 
     @media (max-width: 991px) {

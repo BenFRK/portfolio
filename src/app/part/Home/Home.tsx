@@ -6,13 +6,13 @@ import { useGSAP } from '@gsap/react'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Image from 'next/image'
 function Home() {
- const dev = useRef(null);
- 
+  const dev = useRef(null);
+
   gsap.registerPlugin(ScrollTrigger);
-  useGSAP(()=>{
-    gsap.from("p",{y:20,opacity:0,rotate:80,scale:10,scrollTrigger:{trigger:dev.current,markers:false,start:"top 70%",end:"90% top",toggleActions:"play none resume reverse"}});
-    gsap.from("a",{yPercent:-10,opacity:0,ease:"elastic.out(0.4,0.15)",stagger:0.2,scrollTrigger:{trigger:"a",markers:false,start:"top 70%",end:"bottom 90%",toggleActions:"restart none reverse reset"}});
-  },{scope:dev})
+  useGSAP(() => {
+    gsap.from("p", { y: 20, opacity: 0, rotate: 80, scale: 10, scrollTrigger: { trigger: dev.current, markers: false, start: "top 40%", end: "50% top", toggleActions: "play none none reverse" } });
+    gsap.from("a", { yPercent: -10, opacity: 0, ease: "elastic.out(0.4,0.15)", stagger: 0.2, scrollTrigger: { trigger: "a", markers: false, start: "top 70%", end: "bottom 90%", toggleActions: "restart none reverse reset" } });
+  }, { scope: dev })
 
   return (
     <div ref={dev} id='home' className={style.home}>
