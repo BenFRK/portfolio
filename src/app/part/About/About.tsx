@@ -16,7 +16,7 @@ function About() {
     // .from(right.current,{xPercent:200,opacity:0,ease:"elastic.out(0.4,0.15)"});
     // .from(left.current,{duration:0.5,yPercent:500,opacity:0,ease:"ease in out"});
     gsap.from(right.current, { xPercent: -500, opacity: 0, ease: "ease in out", duration: 0.5, scrollTrigger: { trigger: left.current, markers: false, start: "top 50%", toggleActions: "restart none none reverse" } });
-    gsap.to(smile.current, {rotate:-30,scrollTrigger: { trigger: smile.current, markers: true, start: "top 20%", end: "150% top", pin: true, scrub: 1 } });
+    gsap.to(smile.current, {rotate:-30,scrollTrigger: { trigger: smile.current, markers: false, start: "top 20%", end: "150% top", pin: true, scrub: 1 } });
     gsap.to(motiv.current, { scrollTrigger: { trigger: motiv.current, markers: false, start: "top 20%", end: "275% top", pin: true, scrub: 1 } });
   });
 
@@ -72,3 +72,4 @@ function About() {
 }
 
 export default About;
+
