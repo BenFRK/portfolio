@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef } from 'react'
 import style from './Skills.module.scss'
-import gsap from 'gsap'
+import { gsap } from '@/lib/gsap'
 import { useGSAP } from '@gsap/react'
 import Tech from '@/app/Components/Tech';
 function Skills() {

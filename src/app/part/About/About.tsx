@@ -1,9 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import style from "./About.module.scss";
-import gsap from "gsap";
+import { gsap } from "@/lib/gsap";
 import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 
 function About() {
@@ -11,7 +10,6 @@ function About() {
   const left = useRef(null);
   const smile = useRef(null);
   const motiv = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     // .from(right.current,{xPercent:200,opacity:0,ease:"elastic.out(0.4,0.15)"});
     // .from(left.current,{duration:0.5,yPercent:500,opacity:0,ease:"ease in out"});
@@ -42,7 +40,7 @@ function About() {
           <div className={style.wrap}>
             <div className={style.square}>
               <div className={style.cubeN}></div>
-              <div className={style.cubet}><Image src="/Black Hole.png" alt="smile" width={100} height={100} /></div>
+              <div className={style.cubet}><Image src="/black-hole.png" alt="smile" width={100} height={100} /></div>
               <div className={style.cube}></div>
             </div>
             <div className={style.square}>
